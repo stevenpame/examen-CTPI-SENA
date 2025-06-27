@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENA CTPI - Aprendices</title>
+    <link rel="stylesheet" href="app.css">
+       
+    
+</head>
+<body>
+
+    <div id="login-container">
+        <h2>Ingreso a la Aplicación</h2>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Nombre de Usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
+            <p id="login-error"></p>
+        </form>
+    </div>
+
+    <div id="app-container">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h1 style="margin: 0;">Aprendices SENA CTPI 2025</h1>
+            <p id="user-greeting"></p>
+            <button id="logout-button">Salir</button>
+        </div>
+        <hr>
+
+        <div id="ficha-details">
+            <h3>Detalles de la Ficha Seleccionada:</h3>
+            <p><strong>Código de la Ficha:</strong> <span id="detalle-codigo"></span></p>
+            <p><strong>Nombre del Programa:</strong> <span id="detalle-programa"></span></p>
+            <p><strong>Nivel de Formación:</strong> <span id="detalle-nivel"></span></p>
+            <p><strong>Estado de la Ficha:</strong> <span id="detalle-estado"></span></p>
+        </div>
+
+        <div style="margin-top: 20px;">
+            <label for="ficha-select">Filtrar por Ficha:</label>
+            <select id="ficha-select">
+                </select>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Código Ficha</th>
+                    <th>Nombre Programa</th>
+                    <th>Nivel Formación</th>
+                    <th>Estado Ficha</th>
+                    <th>Documento Aprendiz</th>
+                    <th>Nombre Aprendiz</th>
+                    <th>Estado Aprendiz</th>
+                </tr>
+            </thead>
+            <tbody id="aprendices-table-body">
+                </tbody>
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
