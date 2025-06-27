@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const fila = document.createElement('tr');
 
            
-            if (aprendiz.ESTADO_APRENDIZ === "Retiro Voluntario" || aprendiz.ESTADO_APRENDIZ === "Cancelado") {
+            if (aprendiz.ESTADO_APRENDIZ === "Retiro voluntario") {
                 fila.style.color = 'red';
                 fila.style.fontWeight = 'bold';
                 fila.style.backgroundColor = '#ffcccc';
